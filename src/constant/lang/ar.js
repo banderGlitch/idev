@@ -20,7 +20,7 @@ export default {
     CONFIRM_PASSWORD:"Confirm password",
     SHOW:"Show",
     HIDE:"Hide",
-    FORGOT_PASSWORD:"Forgot Passowrd",
+    FORGOT_PASSWORD:"Forgot Passoword",
     USE_OTP:"Use OTP",
     LOGIN:"Login",
     CREATE_NEW_ACCOUNT:"Create new account",
