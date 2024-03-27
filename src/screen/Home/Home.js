@@ -1,10 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
+import navigationStrings from '../../navigations/navigationStrings'
 
-const Home = () => {
+const Home = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <Text> Home </Text>
+            <Text style={{fontFamily :'Barlow-Bold' }} onPress={() => navigation.navigate(navigationStrings.CREATE_POST)}> Home </Text>
         </View>
     )
 }

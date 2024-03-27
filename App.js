@@ -1,19 +1,18 @@
 
 
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-
+import Routes from './src/navigations/Routes';
+import { Provider } from 'react-redux';
+import store from './src/redux/store';
 
 function App() {
 
 
   return (
-    <SafeAreaView style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <NavigationContainer>
-        <Text>This is  text!</Text>
-      </NavigationContainer>
-    </SafeAreaView>
+    <Provider store={store}>
+      <Routes />
+    </Provider>
+
   );
 }
 

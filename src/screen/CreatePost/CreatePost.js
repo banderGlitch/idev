@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 
-const CreatePost = () => {
+const CreatePost = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <Text> Home </Text>
+            <Text onPress={() => navigation.goBack()}> CreatePost </Text>
         </View>
     )
 }

@@ -1,11 +1,22 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
+import WrapperContainer from '../../component/WrapperContainer'
+import { moderateScale } from '../../styles/responsiveSize'
+import strings from '../../constant/lang'
+import colors from '../../styles/colors'
+import fontFamily from '../../styles/fontFamily'
 
-const Login = () => {
+const Login = ({navigation}) => {
     return (
-        <View style={styles.container}>
-            <Text>Login</Text>
-        </View>
+        <WrapperContainer>
+            <View style={{flex:1}}>
+                <Text>Text!!</Text>
+                <Text style={styles.textStyle}>{strings.WELCOME_BACK}</Text>
+                <Text style={styles.textStyle}>{strings.WE_ARE_HAPPY_TO_SEE}</Text>
+
+
+            </View>
+        </WrapperContainer>
     )
 }
 
@@ -16,5 +27,10 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
+    },
+    textStyle: {
+        color : colors.whiteColor,
+        fontFamily : fontFamily.bold
+
     }
 })
